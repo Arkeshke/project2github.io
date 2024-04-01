@@ -1,0 +1,97 @@
+%for-info{
+    background: rgba(1, 138, 190, 1);
+    color: white;
+    width: 392px;
+    height: 290px;
+    border-radius: 10px;
+}
+
+.map-info{
+    position: relative;
+    top: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    @include _1440-1024{
+        position: relative;
+        left: 250px;
+    }
+    @include _768{
+        position: relative;
+        // top: -3250px;
+        top: -800px;
+        left: 55%
+    }
+    .location{
+        @extend %for-info;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        .map-info__name{
+            font-family: $elmess;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33.6px;
+            width: 302px;
+        }
+        .var{
+            @extend %Font-Proxima;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18.9px;
+            height: 100px;
+            width: 302px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            left: 20px;
+            .map-info__var-name-1{
+                
+                &::before{
+                    content: url(/project/html/lib/img/carbon_location-filled.svg);
+                    position: relative;
+                    right: 20px;
+                }
+            }
+            .map-info__var-name-2{
+                &::before{
+                    content: url(/project/html/lib/img/Spb_metro_logo\ 1.svg);
+                    position: relative;
+                    right: 20px;
+                }
+            }
+            .map-info__var-name-3{
+                &::before{
+                    content: url(/project/html/lib/img/bi_calendar-week-fill.svg);
+                    position: relative;
+                    right: 20px;
+                }
+            }
+        }
+        .map-info-button{
+            width: 302px;
+            .map-info__submit{
+                background-color: white;
+                width: 155px;
+                height: 36px;
+                border-radius: 3px;
+                border: none;
+                padding: 9px 10px;
+                color: rgba(1, 138, 190, 1);
+                font-family: 'proxima', sans-serif;
+                font-weight: 600;
+                font-size: 13px;
+                &:hover{
+                    cursor: grab;
+                }
+            }
+        }
+    }
+
+}
+.locations{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

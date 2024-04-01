@@ -1,0 +1,10 @@
+.main-img{
+    position: relative;
+    left: 312px;
+    top: 40px;
+    @include _768{
+        max-width: 100%;
+        position: relative;
+        left: 75%;
+    }
+}

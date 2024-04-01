@@ -1,0 +1,24 @@
+.main__h1{
+    color: white;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 89.6px;
+    width: 587px;
+    height: 180px;
+    text-align: center;
+    position: relative;
+    left: 667px;
+    top: -330px;
+    @include _768{
+        font-size: 32px;
+        font-weight: 350;
+        line-height: 44.8px;
+        width: 394.5px;
+        height: 90px;
+        text-align: center;
+        position: relative;
+        left: 100%;
+        top: -160px;
+    }
+}

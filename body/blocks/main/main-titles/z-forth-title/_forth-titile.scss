@@ -1,0 +1,13 @@
+.forth-title__p{
+    @extend %kapli;
+    position: relative;
+    top: 250px;
+}
+.forth-title{
+    @include _768{
+        position: relative;
+        // top: -3900px;
+        top: -1450px;
+        left: 75%
+    }
+}

@@ -1,0 +1,53 @@
+.price-menu{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 500px;
+    color: white;
+    @include _1440-1024{
+        position: relative;
+        left: 250px;
+    }
+    .price-menu__name{
+        .price-menu__p{
+            @include _768{
+                width: 350px;
+            }
+            &::before{
+                content: url(/project/html/lib/img/Rectangle\ 6.svg);
+                position: relative;
+                right: 20px;
+            }
+        }
+        @include _768{
+            position: relative;
+            right: 15%;
+        }
+        font-family: 'proxima', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 55.2px;
+        
+    }
+    .price-menu__prices{
+        font-family: $elmess;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 55.2px;
+    }
+    .img-sert{
+        position: relative;
+        top: -100px;
+        font-family: $elmess;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 29.4px;
+        @include _768{
+            position: relative;
+            left: 25%
+        }
+        .img-sert__p{
+            text-align: center;
+        }
+    }
+}

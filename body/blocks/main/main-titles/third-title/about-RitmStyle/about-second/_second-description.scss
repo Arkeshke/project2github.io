@@ -1,0 +1,23 @@
+.description__hidro{
+    width: 496px;
+    height: 302px;
+}
+.about__second{
+    position: relative;
+    top: 100px;
+    .convert{
+        @include _768{
+            position: relative;
+            right: 15%;
+            top: -303px;
+        }
+    }
+    .description-img{
+        position: relative;
+        top: 45px;
+        @include _768{
+            position: relative;
+            left: 60%;
+        }
+    }
+}

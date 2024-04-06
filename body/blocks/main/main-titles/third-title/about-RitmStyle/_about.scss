@@ -1,0 +1,16 @@
+.about{
+    color: white;
+    font-family: 'proxima', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22.4px;
+    @include _1440-1024{
+        position: relative;
+        left: 250px;
+    }
+    @include _768{
+        position: relative;
+        
+        top: -303px;
+    }
+}
